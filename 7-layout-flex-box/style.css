@@ -1,0 +1,61 @@
+.container {
+    text-align: center;
+    color: white;
+    max-width: 600px;
+    max-height: 400px;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h1 {
+    background-color: orange;
+    height: 100px;
+    margin: 0;
+}
+
+p {
+    background-color: aqua;
+    width: 300px;
+    flex-basis: 50%;
+    margin: 0;
+}
+
+.aside {
+    width: 100px;
+}
+
+.right {
+    background-color: pink;
+    flex-basis: 25%;
+}
+
+.left {
+    background-color: green;
+    flex-basis: 25%;
+}
+
+footer {
+    background-color: blueviolet;
+    height: 50px;
+    font-size: 22px;
+}
+
+@media screen and (max-width: 768px){
+    .container{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+aside{
+    width: 80%;
+}
+
+@media screen and (min-width: 992px){
+    .container{
+        
+    }
+}

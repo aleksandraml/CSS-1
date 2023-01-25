@@ -1,0 +1,59 @@
+body{
+   background-color: #fff;
+   padding-left: 20px;
+   padding-top: 20px;
+}
+
+ form{
+   color: aliceblue;
+   font-style: italic;
+   font-size: 14px;
+   background-color: #213b50;
+   padding: 20px;
+ }
+
+ input,
+ select,
+ textarea{
+   background-color: #2b4a64;
+   color: #fff;
+   width: 50%;
+   margin-bottom: 10px;
+   border: 1px solid #2b4a64;
+   padding: 5px;
+ }
+
+label{
+   display: block;
+   margin-bottom: 2px;
+}
+
+label[for*="male"],
+label[for*="agreement"]{
+   display: inline;
+}
+
+input[type="radio"],
+input[type="checkbox"]{
+   width: auto;
+
+}
+
+input:focus,
+textarea:focus,
+select:focus{
+   background-color: #4e708c;
+}
+
+input[type="submit"]{
+background-color: #1ac056;
+width: auto;
+cursor: pointer;
+padding: 10px 20px;
+font-weight: 700;
+text-transform: uppercase;
+}
+
+input[type="submit"]:hover{
+   background-color: #46e881;
+}
