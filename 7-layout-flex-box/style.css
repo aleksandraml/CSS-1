@@ -21,6 +21,7 @@ p {
     width: 300px;
     flex-basis: 50%;
     margin: 0;
+    height: 80px;
 }
 
 .aside {
@@ -30,11 +31,13 @@ p {
 .right {
     background-color: pink;
     flex-basis: 25%;
+    height: 80px;
 }
 
 .left {
     background-color: green;
     flex-basis: 25%;
+    height: 80px;
 }
 
 footer {
@@ -43,19 +46,36 @@ footer {
     font-size: 22px;
 }
 
-@media screen and (max-width: 768px){
-    .container{
-        width: 100%;
+
+
+@media screen and (max-width: 992px) {
+    p {
+        flex-basis: 75%;
+    }
+
+    .left {
+        flex-basis: 100%;
+        order: 1;
+    }
+
+    .right {
+        flex-basis: 25%;
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px){
-aside{
-    width: 80%;
-}
+@media screen and (max-width: 768px) {
+    p {
+        flex-basis: 100%;
+        order:1
+    }
 
-@media screen and (min-width: 992px){
-    .container{
-        
+    .right {
+        flex-basis: 100%;
+        order: 3;
+    }
+
+    .left {
+        flex-basis: 100%;
+        order: 2;
     }
 }
